@@ -1,2 +1,2 @@
 # ContactSplitterDoc
-Documentation for Project ContactSplitter für lesson "Softwarequalität"
+Documentation for Project ContactSplitter for lesson "Softwarequalität"
