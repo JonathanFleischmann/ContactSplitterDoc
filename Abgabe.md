@@ -1,4 +1,4 @@
-# Abgabe-Dokumente für den Kontaktsplitter
+# Abgabe-Dokumente für den Kontaktsplitter Team Laura
 
 # User-Stories
 ## User Story 1: Anrede identifizieren und speichern
@@ -156,5 +156,79 @@ Der Auftrag gilt als **fertiggestellt**, wenn alle der folgenden Kriterien erfü
 - [ ] Die Gesamtbewertungskriterien der Aufgabe (MVP, User Stories, Tests, Release Notes, Funktionalität) sind abgedeckt und überprüft.
 
 ---
+
+# Release Notes - Kontaktsplitter v1.0
+
+## **Version**: 1.0  
+## **Release Date**: 28.05.2025  
+
+---
+
+## **Zusammenfassung**
+Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters, einer Anwendung zur automatisierten Erkennung und Verarbeitung von Kontaktinformationen (Anrede, Titel, Vorname, Nachname, Geschlecht und einer Altersschätzung). Die Anwendung wurde in Python entwickelt und als ausführbare Datei (.exe) für Windows 11 bereitgestellt.  
+
+---
+
+## **Neue Features**
+### 1. **Automatische Anrede- und Geschlechtserkennung**
+- Identifikation, Zuordnung und Zwischenspeicherung von der Anrede, den Titel, den Vorname, den Nachname, dem Geschlecht und einer Altersschätzung.
+- Unterstützung für manuelle Anpassungen, falls die Zuordnung nicht eindeutig ist.
+- Fehlermeldungen und Hinweise erhöhen die Benutzerfreundlichkeit und die Nachvollziehbarkeit.
+
+### 2. **Trennung von Vor- und Nachnamen**
+- Automatische Trennung von Vor- und Nachnamen, inklusive Unterstützung für Doppelnamen.
+
+### 3. **Generierung von Briefanreden**
+- Erstellung standardisierter Briefanreden auf Basis der eingegebenen Informationen auf verschiedenen Sprachen.
+
+### 4. **Mehrsprachige Unterstützung**
+- Unterstützung für die englische, deutsche, französische, spanische, italienische, portugiesische, polnische, tschechische, rumänische und serbische Sprache.
+
+### 5. **Manuelle Anpassungen**
+- Möglichkeit, neue Titel hinzuzufügen.
+
+---
+
+## **Systemanforderungen**
+- **Betriebssystem**: Windows 11 (64-bit)
+- **Laufzeitumgebung**: Python 3.10+ (falls Quellcode verwendet wird)
+- **RAM**: 2 GB (Minimum)  
+- **Speicherplatz**: 100 MB
+
+---
+
+## **Installation**
+1. Laden Sie die ausführbare Datei (`Kontaktsplitter_v1.0.exe`) aus dem bereitgestellten Release-Paket herunter.
+2. Speichern Sie die Datei an einem gewünschten Speicherort auf Ihrem Computer.
+3. Doppelklicken Sie auf die Datei `Kontaktsplitter_v1.0.exe`, um die Anwendung zu starten.
+
+## **Ausführung aus dem Quellcode**
+Falls Sie den Quellcode ausführen möchten, gehen Sie wie folgt vor:
+1. Laden Sie das Repository herunter oder klonen Sie es über Git:  
+   
+   git clone https://github.com/beispiel/kontaktsplitter.git
+
+   pip install -r requirements.txt
+
+   python main.py
+
+---
+
+## **Zukünftige Verbesserungen**
+- persistente Datenbankanbindung
+
+---
+## **Support**
+
+Falls Sie auf Probleme stoßen oder Feedback geben möchten, kontaktieren Sie uns bitte unter:
+i22021@hb.dhbw-stuttgart.de
+
+i22006@hb.dhbw-stuttgart.de
+
+i22032@hb.dhbw-stuttgart.de
+
+Vielen Dank, dass Sie den Kontaktsplitter verwenden!
+Ihr Entwicklungsteam Laura
+   
 
 
