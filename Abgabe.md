@@ -72,7 +72,7 @@
 
 ## User Story 6: Deutschsprachige Unterstützung für Anreden
 **Als** Sachbearbeiter:in  
-**möchte ich**, dass die Unterstüzung der deutsche Sprache, aber auch die potentzielle Erkennung anderer Sprachen gewährleistet ist,  
+**möchte ich**, dass die Unterstützung der deutsche Sprache, aber auch die potenzielle Erkennung anderer Sprachen gewährleistet ist,  
 **um** eine internationale Korrespondenz zu ermöglichen.
 
 ### Akzeptanzkriterien
@@ -101,9 +101,9 @@ Der Auftrag gilt als **fertiggestellt**, wenn alle der folgenden Kriterien erfü
 - [X] "Hard Coding" wird vermieden.
 - [X] Es werden Iterationen anstatt Rekursionen werden verwendet.
 - [X] Alle externen Bibliotheken/Dependencies sind im Design dokumentiert.
-- [X] Variablennamen befolgen Bennenungskonventionen.
+- [X] Variablennamen befolgen Benennungskonventionen.
 - [X] Clean-Code-Konventionen werden eingehalten (< 500 Zeilen / < 3 Parameter / DRY-Prinzip).
-- [X] Kommentaren sind sinnvoll genutzt, um Zweck und Funktionsweise verständlicher zu beschreiben.
+- [X] Kommentare sind sinnvoll genutzt, um Zweck und Funktionsweise verständlicher zu beschreiben.
 - [X] Kommentare befolgen Kommentarkonventionen (auskommentierten Code-Blöcke / TODOs:).
 
 ---
@@ -112,7 +112,7 @@ Der Auftrag gilt als **fertiggestellt**, wenn alle der folgenden Kriterien erfü
 - [X] Unit-Tests decken alle implementierten Funktionen ab.
 - [X] Alle Testfälle sind erfolgreich durchlaufen.
 - [X] Es existieren Testfälle für alle kritischen Use-Cases, insbesondere:
-  - Erkennung der Anrede, des Titel, des Vorname, des Nachname und des Geschlechts.
+  - Erkennung der Anrede, des Titels, des Vornamens, des Nachnamens und des Geschlechts.
   - Trennung von Vor- und Nachname.
   - Generierung der Briefanrede.
   - Generierung des Bindestrichs bei Doppelnamen.
@@ -166,7 +166,7 @@ Die Anwendung "Kontakt-Splitter" bietet eine intuitive Nutzungsoberfläche, um N
 ### **1. Namen scannen**
 - **Eingabefeld:** Ganz oben befindet sich ein Textfeld, in das der vollständige Name eingegeben werden kann (z. B. "Herr Max Mustermann").
 - **Schaltfläche "Namen scannen":** Mit einem Klick auf diese orangefarbene Schaltfläche wird der eingegebene Name analysiert und wird automatisch in ein Objekt mit den Bestandteilen diesen Namens umgewandelt (Titel, Vorname und Nachname).
-- **KI-Ein- und Ausschalten:** Mit Einer Checkbox kann die Unterstüzung von KI, zur Ermittlung des Geschlechts anhand des Namens ein und ausgeschalten werden.
+- **KI-Ein- und Ausschalten:** Mit Einer Checkbox kann die Unterstützung von KI, zur Ermittlung des Geschlechts, anhand des Namens ein- und ausgeschaltet werden.
 
 ---
 
@@ -184,24 +184,24 @@ Generiert basierend auf den analysierten Daten eine standardisierte Briefanrede.
 - **Schaltflächen:** "Entfernen" entfernt eine Komponente, und "Komponente hinzufügen" erlaubt das Hinzufügen neuer Informationen.
 
 #### **Eingabeverlauf:** 
-Dieser Modus ist in der Lage den eingegebenen Namen in einer Kontaktliste **transistent** zu speichern, indem man die grüne Schaltfläche "Kontakt speichern drückt". Mithilfe den zweien blauen Schaltflächen "persistentes Speichern" und "persistent Laden" können die Benutzer:innen die Kontaktliste **persistent** speichern. Damit wird die Nutzungsfreundlichkeit enorm verbessert, da Kontakte auch nach Programmende nach Wunsch der Benutzer:innen wieder geladen werden können.
+Dieser Modus ist in der Lage den eingegebenen Namen in einer Kontaktliste **transient** zu speichern, indem man die grüne Schaltfläche "Kontakt speichern drückt". Mithilfe der zwei blauen Schaltflächen "persistentes Speichern" und "persistent Laden" können die Benutzer:innen die Kontaktliste **persistent** speichern. Damit wird die Nutzungsfreundlichkeit enorm verbessert, da Kontakte auch nach Programmende nach Wunsch der Benutzer:innen wieder geladen werden können.
 
-Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeiten" bearbeitet werden, wobei dann in der Modusauswahl "Namen und Daten anpassen" die Daten des Kontaktes reingeladen werden. Ebenfalls können diese Kontakte wiederrum auch mit der roten Schaltfläche "Löschen" entfernt werden.
+Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeiten" bearbeitet werden, wobei dann in dem anderen Modi die Daten des Kontaktes übernommen werden. Ebenfalls können diese Kontakte mit der roten Schaltfläche "Löschen" entfernt werden.
 
 
 #### **Optionen ergänzen:**
- Hier können neue Titel-, Anreden-, Geschlechts- und Briefanredenoptionen  ergänzt und **transistent** gespeichert werden, um die Analyse und Zuordnung weiter zu individualisieren.
+ Hier können neue Titel-, Anreden-, Geschlechts- und Briefanredeoptionen  ergänzt und **transient** gespeichert werden, um die Analyse und Zuordnung weiter zu individualisieren.
 
  - **Titel hinzufügen:** \
  Für die Erweiterung der **Titelliste** ist ein Eingabefeld und ein Drop-Down mit verschiedenen Sprachen vorgesehen, die mit der blauen Schaltfläche "Hinzufügen" den neuen Titel speichert. 
  - **Geschlecht hinzufügen:**\
-  Für das Hinzufügen eines neuen Geschlechts in die **Geschlechtsliste** gibt es auch ein Eingabenfeld mit einer "Hinzufügen"-Schaltfläche. 
+  Für das Hinzufügen eines neuen Geschlechts in die **Geschlechtsliste** gibt es auch ein Eingabefeld mit einer "Hinzufügen"-Schaltfläche. 
  - **Anrede hinzufügen:**\
-  Um eine neue Anrede in die **Anredeliste** zu speichern, wird ebenfalls ein Eingabefeld, sowie eine Drop-Down der verschiedenen Sprachen und ein Drop-Down mit den aktuell vorhandenen Geschlechtn bereitgestellt. Die Speicherung erfolgt ebenfalls durch die Aktivierung der blauen Schaltfläche "Hinzufügen".
+  Um eine neue Anrede in die **Anredeliste** zu speichern, wird ebenfalls ein Eingabefeld, sowie eine Drop-Down der verschiedenen Sprachen und ein Drop-Down mit den aktuell vorhandenen Geschlechtern bereitgestellt. Die Speicherung erfolgt ebenfalls durch die Aktivierung der blauen Schaltfläche "Hinzufügen".
  - **Briefanrede hinzufügen:** \
  Schlussendlich gibt es noch die Option eine neue Briefanrede in die **Briefanredensliste** einzufügen. Dies wird mithilfe eines Eingabefeldes, einer Sprache (Drop-Down), eines Geschlechts (Drop-Down) und einer Entscheidung (Nachname anhängen/ Nachnamen nicht anhängen) realisiert. Wie auch bei den anderen Optionen wird die Eingabe durch die blaue Schaltfläche "Hinzufügen" gespeichert. 
 - **Listen anzeigen:**\
- Per Design-Entscheidung von Team Laura wurde festgelegt, dass die Listen in JSON-Datein verwaltet und abgerufen werden können. In dem MVP werden deshalb die Listen in demselben Ordner, in der auch die .exe liegt verwaltet. Die Benutzer:innen haben damit die Möglichkeit zu überprüfen, welche Sprachen, Titel, Anreden, Geschlechter und Briefanreden dieses Programm momentan unterstützt, wobei die Nutzungsfreundlichkeit aber auch die Nachvollziehbarkeit verbessert wird.
+ Per Design-Entscheidung von Team Laura wurde festgelegt, dass die Listen in JSON-Dateien verwaltet und abgerufen werden können. In dem MVP werden deshalb die Listen in demselben Ordner, in der auch die .exe liegt verwaltet. Die Benutzer:innen haben damit die Möglichkeit zu überprüfen, welche Sprachen, Titel, Anreden, Geschlechter und Briefanreden dieses Programm momentan unterstützt, wobei die Nutzungsfreundlichkeit aber auch die Nachvollziehbarkeit verbessert wird.
 ---
 
 ### **Anwendungsbeispiel**
@@ -212,15 +212,15 @@ Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeit
    - Wechseln Sie in den Modus "Briefanrede", und die Anwendung generiert automatisch die korrekte Anrede ("Sehr geehrter Herr Dr. Mustermann").
 
 3. **Bearbeiten von Daten:**
-   - Im Modus "Namen und Daten anpassen" können Sie etwa den Vornamen von "Max" zu "Alexander" ändern, oder andere Komponenten wie Anrede, Titel, Vorname oder Nachname hinzufügen, oder die bestehenden Attribute ändern. 
+   - Im Modus "Namen und Daten anpassen" können Sie etwa den Vornamen von "Max" zu "Alexander" ändern, oder andere Komponenten wie Titel, Vorname oder Nachname hinzufügen, oder die bestehenden Attribute ändern. 
 
 4. **Verwenden des Eingabeverlaufs:**
    - Speichern Sie diesen Kontakt ab, damit dieser im Eingabeverlauf erscheint.
    - Persistieren Sie diesen, indem Sie die entsprechende Schaltfläche betätigen.
-   - Diesen können nun jederzeit (auch nach Programmende) aufrufen, indem Sie die persistente Liste laden (Dieser Schritt ersetzt auch die transistenten Kontakte, falls vorhanden).
+   - Diesen können nun jederzeit (auch nach Programmende) aufrufen, indem Sie die persistente Liste laden (Dieser Schritt ersetzt auch die transitenten Kontakte, falls vorhanden).
 
 5. **Ergänzen von Optionen:**
-   - Fügen Sie einen neuen Titel oder ein neues Geschlecht in Kombination mit einer passenenden Anrede im Modus "Optionen ergänzen" hinzu.
+   - Fügen Sie einen neuen Titel oder ein neues Geschlecht in Kombination mit einer passenden Anrede im Modus "Optionen ergänzen" hinzu.
 ---
 ## **Architektur-Design**
 ![Alt-Text](ContactSplitterKlassendiagramm.svg)
@@ -248,7 +248,7 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 ---
 
 ### Automatische Erkennung von Titel, Namen und Geschlecht
-- **Identifikation und Zuordnung:** Das Programm erkennt und speichert automatisch Titel, Vorname, Nachname und Geschlecht durch eine komplexe Logik, die über grundlegende Anforderungen hinausgeht.
+- **Identifikation und Zuordnung:** Das Programm erkennt und speichert automatisch Titel, Vorname, Nachname und Geschlecht durch eine komplexe Logik, die über grundlegende Anforderungen hinausgeht. Die Reihenfolge der Titel wird bei dem Generieren der Briefanrede genau so beibehalten, wie sie in der ursprünglichen Eingabe formatiert war oder nach der Modifikation der Attribute vorliegt. 
 - **Anrede-Erkennung:** Anreden werden erkannt, aber nicht gespeichert. Stattdessen wird bei der Erstellung einer Briefanrede eine passende, standardisierte Anrede aus einer vordefinierten Liste verwendet.
 
 ---
@@ -300,12 +300,8 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 - **4+ Namen:** Die ersten beiden Namen gelten als Vornamen, alle weiteren Namen werden als Nachnamen betrachtet.
 
 #### **Sonderfall: Namensumkehrung durch Komma**
-- Wenn ein Komma in der Eingabe erkannt wird, wird der Name nach folgender Regel verarbeitet:
-  - Der Name rechts des Kommas wird als Vorname interpretiert.
-  - Der Name links des Kommas wird als Nachname interpretiert.
-- Beispiel: `Müller, Petra` wird zu:
-  - Vorname: Petra
-  - Nachname: Müller
+- Wenn ein Komma in der Eingabe erkannt wird, werden die umliegenden Namen getauscht, das Komma entfernt und danach wird die reguläre Scanner-Logik angewandt.
+- Beispiel: `Müller, Petra` wird zu `Petra Müller`
 
 #### **Erkennung von Titeln und Anreden**
 - **Mehrsprachige Erkennung:** Titel und Anreden werden anhand einer hinterlegten Liste erkannt, unabhängig von ihrer Position im Namen.
@@ -335,7 +331,7 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 
 1. Laden Sie das bereitgestellte Release-Paket herunter.
 2. Speichern Sie die Datei an einem gewünschten Speicherort auf Ihrem Computer.
-3. Doppelklicken Sie auf die Datei `Kontaktsplitter_v1.0.exe`, um die Anwendung zu starten.
+3. Doppelklicken Sie auf die Datei `ContactSplitter.exe`, um die Anwendung zu starten.
 
 ### **Option 2: Ausführung aus dem Quellcode**
 Falls Sie den Quellcode ausführen möchten, gehen Sie wie folgt vor:
@@ -367,7 +363,7 @@ Ihr Entwicklungsteam Laura
 ## **Inhaltliche Fragen**
 
 ### **1. In wie weit berücksichtigt die KI gültige Standards und Normen dazu?**
-Die KI verwendet keine explizit standardisierten oder normierten Datenbanken zur Geschlechtsbestimmung. Stattdessen basiert die Einschätzung auf einem KI-Modell (z. B. GPT-4.1-mini), das auf allgemeine Daten und Sprachmuster trainiert ist. Standards wie ISO-Identifikationen von Geschlechtern oder amtliche Namenslisten werden nicht berücksichtigt. 
+Die KI verwendet keine explizit standardisierten oder normierten Datenbanken zur Geschlechtsbestimmung. Stattdessen basiert die Einschätzung auf einem KI-Modell (z. B. GPT-4.1-mini), das auf allgemeine Daten und Sprachmuster trainiert ist. Standards wie die ISO-Identifikation von Geschlechtern oder amtliche Namenslisten werden nicht berücksichtigt. 
 
 Die Zuordnung erfolgt nach Wahrscheinlichkeit auf Basis des Namens und gängiger Konventionen, was in bestimmten Fällen zu kulturellen oder regionalen Ungenauigkeiten führen kann.
 
@@ -391,10 +387,10 @@ Erweiterungen wären möglich, indem zusätzliche Informationen wie Berufsbezeic
 ### **2. Wie verändert sich der Aufwand zur Bearbeitung hinsichtlich Dokumentation, Architektur/Design, Umsetzung, Test im Vergleich zu Gruppen, die keine KI einsetzen?**
 
 #### **Anmerkung**
-Wie bereits erwähnt, verwendet Team Laura nur KI wenn das Geschlecht aus dem Kontext nicht ersichtlich wird. Dann und erst dann wird KI in Kombination mit dem Namen verwendet um eine Schätzung durchzuführen. Das geschätzte Geschlecht kann aber durch die grafische Oberfläche wieder modifiziert werden und erweitert werden, um niemanden zu diskriminieren.
+Wie bereits erwähnt, verwendet Team Laura nur KI wenn das Geschlecht aus dem Kontext nicht ersichtlich wird. Dann und erst dann wird KI in Kombination mit dem Namen verwendet um eine Schätzung durchzuführen. Das geschätzte Geschlecht kann aber durch die grafische Oberfläche nachträglich modifiziert werden und erweitert werden, um niemanden zu diskriminieren.
 
 #### **Dokumentation**
-- Die Dokumentation wurde durch allein anhand dieses Kapitel komplexer, welches nicht nötig wäre wenn keine KI genutzt werden würde.
+- Die Dokumentation benötigt mehr Aufwand, da zusätzliche Dokumentation vorgenommen wurde, welches nicht nötig wäre, wenn keine KI-Implementation genutzt werden würde.
 
 #### **Architektur/Design**
 - Mit KI wird die Architektur dynamischer, da eine API-Integration erforderlich ist. Dies erhöht die Komplexität, da:
@@ -408,7 +404,7 @@ Wie bereits erwähnt, verwendet Team Laura nur KI wenn das Geschlecht aus dem Ko
 
 #### **Test**
 - Mit KI ist die Testbarkeit eingeschränkt, da die internen Entscheidungswege der KI nicht vollständig transparent sind. Es müssen Testfälle definiert werden, um typische und problematische Eingaben zu prüfen.
-- Dennoch lässt sich sagen, dass die Zuordnung eines Geschlechts zu einem Namen unter dem selben Seed deterministisch ist und daher theoretisch testbar wär, aber alle Namne zu testen jedoch wiederum nicht vollständig testbar ist.
+- Dennoch lässt sich sagen, dass die Zuordnung eines Geschlechts zu einem Namen unter dem selben Seed deterministisch ist und daher theoretisch testbar wär, aber alle Name zu testen jedoch wiederum nicht vollständig testbar ist.
 - Ohne KI wäre eine größere Abdeckung, anhand der Transparenz, durch statische Tests möglich.
 
 ---
