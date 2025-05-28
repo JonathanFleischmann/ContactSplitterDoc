@@ -1,14 +1,14 @@
 # Abgabe-Dokumente für den Kontaktsplitter Team Laura
 
 # User-Stories
-## User Story 1: Anrede identifizieren und speichern
+## User Story 1: Anrede identifizieren, aufteilen und zwischenspeichern
 **Als** Sachbearbeiter  
 **möchte ich**, dass die Ausgabe des Visitenkartenscanners (Zeichenkette) automatisch in den Feldern "Anrede", "Titel", "Geschlecht", "Vorname" und "Nachname" zerlegt und zwischengespeichert wird,  
 **um** sicherzustellen, dass die Daten standardisiert und korrekt vorliegen.
 
 ### Akzeptanzkriterien
 - Die Anrede ("Herr", "Frau", etc.) wird korrekt erkannt und gespeichert.
-- Das Geschlecht wird auf Basis der Anrede richtig zugeordnet (z. B. "Herr" → männlich).
+- Das Geschlecht wird auf Basis der Anrede richtig zugeordnet (z. B. "Herr" → Männlich).
 - Der Titel soll anhand einer Titelliste erkannt und zugeordnet werden.
 - Der/Die Vorname(n) und Nachname(n) soll(en) so gut es geht unterschieden und getrennt zu den korrespondierenden Feldern zugeordnet werden.
 - Falls ein Inhalt der Zeichenkette einem Feld nicht automatisch zugeordnet werden kann, wird ein Annahme angezeigt, und die manuelle Auswahl/Änderung ist möglich.
@@ -157,7 +157,7 @@ Der Auftrag gilt als **fertiggestellt**, wenn alle der folgenden Kriterien erfü
 
 ---
 
-# **Kontakt-Splitter UI**
+# **Kontakt-Splitter Design**
 
 Die Anwendung "Kontakt-Splitter" bietet eine intuitive Benutzeroberfläche, um Namen und zugehörige Informationen wie Anrede, Vorname und Nachname zu analysieren, zu bearbeiten und für verschiedene Zwecke zu nutzen. Hier eine Beschreibung der einzelnen Bereiche und ihrer Funktionen:
 
@@ -167,7 +167,7 @@ Die Anwendung "Kontakt-Splitter" bietet eine intuitive Benutzeroberfläche, um N
 
 ### **1. Namen scannen**
 - **Eingabefeld:** Ganz oben befindet sich ein Textfeld, in das der vollständige Name eingegeben werden kann (z. B. "Herr Max Mustermann").
-- **Schaltfläche "Namen scannen":** Mit einem Klick auf diese orangefarbene Schaltfläche wird der eingegebene Name analysiert und automatisch in seine Bestandteile zerlegt (Anrede, Vorname, Nachname).
+- **Schaltfläche "Namen scannen":** Mit einem Klick auf diese orangefarbene Schaltfläche wird der eingegebene Name analysiert und wird automatisch in ein Objekt mit den Bestandteilen diesen Namens umgewandelt (Titel, Vorname und Nachname).
 
 ---
 
@@ -178,18 +178,24 @@ Unter dem Bereich "Namen scannen" gibt es eine horizontale Leiste mit vier Haupt
   
 - **Namen und Daten anpassen:** Ermöglicht die detaillierte Bearbeitung der aufgeteilten Daten. 
   - **Bearbeitungsfelder:** 
-    - "Anrede", "Vorname" und "Nachname" werden einzeln aufgelistet, und jede Komponente kann manuell angepasst oder entfernt werden.
-    - Zusätzliche Informationen wie Sprache und Geschlecht können hinzugefügt werden.
+    - "Titel", "Vorname" und "Nachname" werden einzeln aufgelistet, und jede Komponente kann manuell angepasst oder entfernt werden.
+    - Zusätzliche Informationen wie Sprache und Geschlecht können hinzugefügt beziehungsweise geändert werden, wobei die Änderungen direkt wirksam werden.
   - **Schaltflächen:** "Entfernen" entfernt eine Komponente, und "Komponente hinzufügen" erlaubt das Hinzufügen neuer Informationen.
-  - **Speichern:** Mit der Schaltfläche "Aktualisieren" können alle Änderungen gespeichert werden.
 
-- **Eingabeverlauf:** Dieser Modus ist in der Lage den eingegebenen Namen in einer Kontaktliste zu speichern, indem man die grüne Schaltfläche "Kontakt speichern drückt". Der Benutzer kann alte Eingaben einsehen und bei Bedarf wiederverwenden. Diese sind als blaue Schaltflächen dargestellt und werden per Mausklick ausgewählt.
+- **Eingabeverlauf:** Dieser Modus ist in der Lage den eingegebenen Namen in einer Kontaktliste **transistent** zu speichern, indem man die grüne Schaltfläche "Kontakt speichern drückt". Mithilfe den zweien blauen Schaltflächen "persistentes Speichern" und "persistent Laden" kann der Benutzer die Kontaktliste **persistent** speichern. Damit wird die Benutzerfreundlichkeit enorm  verbessert, da Kontakte auch nach Programmende nach Wunsch des Benutzers wieder geladen werden können.
 
-- **Optionen ergänzen:** Hier können neue Titel, Anreden und Geschlechtsoptionen ergänzt werden, um die Analyse und Zuordnung weiter zu individualisieren. Für die Erweiterung der Titelliste ist ein Eingabefeld und ein Drop-Down mit verschiedenen Sprachen vorgesehen, die mit der blauen Schaltfläche "Hinzufügen" den neuen Titel speichert. Für das Hinzufügen eines neuen Genders gibt es auch ein Eingabenfeld mit einer "Hinzufügen"-Schaltfläche. Um eine neue Anrede zu speichern, wird ebenfalls ein Eingabefeld, sowie eine Drop-Down der verschiedenen Sprachen und ein Drop-Down mit den aktuell vorhandenen Gendern bereitgestellt. Die Speicherung erfolgt ebenfalls durch die Aktivierung der blauen Schaltfläche "Hinzufügen".
+Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeiten" bearbeitet werden, wobei dann in der Modusauswahl "Namen und Daten anpassen" die Daten des Kontaktes reingeladen werden. Ebenfalls können diese Kontakte wiederrum auch mit der roten Schaltfläche "Löschen" entfernt werden.
 
+
+- **Optionen ergänzen:** Hier können neue Titel-, Anreden-, Geschlechts- und Briefanredenoptionen  ergänzt und **transistent** gespeichert werden, um die Analyse und Zuordnung weiter zu individualisieren.
+ - Für die Erweiterung der **Titelliste** ist ein Eingabefeld und ein Drop-Down mit verschiedenen Sprachen vorgesehen, die mit der blauen Schaltfläche "Hinzufügen" den neuen Titel speichert. 
+ - Für das Hinzufügen eines neuen Genders in die **Genderliste** gibt es auch ein Eingabenfeld mit einer "Hinzufügen"-Schaltfläche. - Um eine neue Anrede in die **Anredeliste** zu speichern, wird ebenfalls ein Eingabefeld, sowie eine Drop-Down der verschiedenen Sprachen und ein Drop-Down mit den aktuell vorhandenen Gendern bereitgestellt. Die Speicherung erfolgt ebenfalls durch die Aktivierung der blauen Schaltfläche "Hinzufügen".
+ - Schlussendlich gibt es noch die Option eine neue Briefanrede in die **Briefanredensliste** einzufügen. Dies wird mithilfe eines Eingabefeldes, einer Sprache (Drop-Down), eines Genders (Drop-Down) und einer Entscheidung (Nachname anhängen/ Nachnamen nicht anhängen) realisiert. Wie auch bei den anderen Optionen wird die Eingabe durch die blaue Schaltfläche "Hinzufügen" gespeichert. 
+
+- **Listen anzeigen:** Per Design-Entscheidung von Team Laura wurde festgelegt, dass die Listen in JSON-Datein verwaltet und abgerufen werden können. In dem MVP werden deshalb die Listen in demselben Ordner, in der auch die .exe liegt verwaltet. Der Benutzer hat damit die Möglichkeit zu überprüfen, welche Sprachen, Titel, Anreden, Geschlechter und Briefanreden dieses Programm momentan unterstützt, wobei die Benutzerdreundlichkeit aber auch die Nachvollziehbarkeit verbessert wird.
 ---
 
-## **Anwendungsbeispiele**
+## **Anwendungsbeispiel**
 1. **Eingabe eines Namens:** 
    - Geben Sie z. B. "Herr Dr. Max Mustermann" in das Textfeld ein und klicken Sie auf "Namen scannen". Der Name wird in "Anrede: Herr", "Titel: Dr.", "Vorname: Max", und "Nachname: Mustermann" aufgeteilt.
 
@@ -201,6 +207,7 @@ Unter dem Bereich "Namen scannen" gibt es eine horizontale Leiste mit vier Haupt
 
 4. **Verwenden des Eingabeverlaufs:**
    - Speichern Sie diesen Kontakt und rufen Sie ihn nach weiteren Eingaben aus dem Eingabeverlauf ab, um Zeit zu sparen.
+   - Verwenden Sie die 
 
 5. **Ergänzen von Optionen:**
    - Fügen Sie einen neuen Titel oder ein neues Gender in Kombination mit einer passenenden Anrede im Modus "Optionen ergänzen" hinzu.
@@ -225,7 +232,7 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 - Fehlermeldungen und Hinweise erhöhen die Benutzerfreundlichkeit und die Nachvollziehbarkeit.
 
 ### 2. **Trennung von Vor- und Nachnamen**
-- Automatische Trennung von Vor- und Nachnamen, inklusive Unterstützung für Doppelnamen.
+- Automatische Trennung von Vor- und Nachnamen, inklusive Unterstützung für Doppelnamen und deren Formatierung.
 
 ### 3. **Generierung von Briefanreden**
 - Erstellung standardisierter Briefanreden auf Basis der eingegebenen Informationen auf verschiedenen Sprachen.
