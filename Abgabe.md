@@ -3,11 +3,11 @@
 # User-Stories
 ## User Story 1: Anrede identifizieren, aufteilen und zwischenspeichern
 **Als** Sachbearbeiter  
-**möchte ich**, dass die Ausgabe des Visitenkartenscanners (Zeichenkette) automatisch in den Feldern "Anrede", "Titel", "Geschlecht", "Vorname" und "Nachname" zerlegt und zwischengespeichert wird,  
+**möchte ich**, dass die Ausgabe des Visitenkartenscanners (Zeichenkette) automatisch in den Feldern "Titel", "Vorname", "Nachname" und "Geschlecht" zerlegt und zwischengespeichert wird,  
 **um** sicherzustellen, dass die Daten standardisiert und korrekt vorliegen.
 
 ### Akzeptanzkriterien
-- Die Anrede ("Herr", "Frau", etc.) wird korrekt erkannt und gespeichert.
+- Die Anrede ("Herr", "Frau", etc.) wird korrekt erkannt.
 - Das Geschlecht wird auf Basis der Anrede richtig zugeordnet (z. B. "Herr" → Männlich).
 - Der Titel soll anhand einer Titelliste erkannt und zugeordnet werden.
 - Der/Die Vorname(n) und Nachname(n) soll(en) so gut es geht unterschieden und getrennt zu den korrespondierenden Feldern zugeordnet werden.
@@ -88,82 +88,80 @@
 Der Auftrag gilt als **fertiggestellt**, wenn alle der folgenden Kriterien erfüllt sind:
 
 ## **Allgemein**
-- [ ] Alle User Stories sind vollständig umgesetzt und erfüllen die definierten Akzeptanzkriterien.
-- [ ] Der Code ist in einer Versionsverwaltung (Git) sauber dokumentiert, inklusive beschreibender Commits.
-- [ ] Die Anwendung ist vollständig lauffähig auf einem Windows 11 PC und kann ohne Fehler ausgeführt werden.
-- [ ] Es existiert ein lauffähiger Build/Release, der die MVP-Funktionalität vollständig abbildet.
+- [X] Alle User Stories sind vollständig umgesetzt und erfüllen die definierten Akzeptanzkriterien.
+- [X] Der Code ist in einer Versionsverwaltung (Git) sauber dokumentiert, inklusive beschreibender Commits.
+- [X] Die Anwendung ist vollständig lauffähig auf einem Windows 11 PC und kann ohne Fehler ausgeführt werden.
+- [X] Es existiert ein lauffähiger Build/Release, der die MVP-Funktionalität vollständig abbildet.
 
 ---
 
 ## **Clean-Code-Qualität**
-- [ ] Der Quellcode ist klar strukturiert, formatiert, modular aufgebaut und leicht verständlich.
-- [ ] Die Ordnerstruktur ist klar strukturiert modular aufgebaut und leicht verständlich.
-- [ ] "Hard Coding" wird vermieden.
-- [ ] Es werden Iterationen anstatt Rekursionen werden verwendet.
-- [ ] Alle externen Bibliotheken/Dependencies sind im Design dokumentiert.
-- [ ] Variablennamen befolgen Bennenungskonventionen.
-- [ ] Clean-Code-Konventionen werden eingehalten (< 500 Zeilen / < 3 Parameter / DRY-Prinzip).
-- [ ] Kommentaren sind sinnvoll genutzt, um Zweck und Funktionsweise verständlicher zu beschreiben.
-- [ ] Kommentare befolgen Kommentarkonventionen (auskommentierten Code-Blöcke / TODOs:).
+- [X] Der Quellcode ist klar strukturiert, formatiert, modular aufgebaut und leicht verständlich.
+- [X] Die Ordnerstruktur ist klar strukturiert modular aufgebaut und leicht verständlich.
+- [X] "Hard Coding" wird vermieden.
+- [X] Es werden Iterationen anstatt Rekursionen werden verwendet.
+- [X] Alle externen Bibliotheken/Dependencies sind im Design dokumentiert.
+- [X] Variablennamen befolgen Bennenungskonventionen.
+- [X] Clean-Code-Konventionen werden eingehalten (< 500 Zeilen / < 3 Parameter / DRY-Prinzip).
+- [X] Kommentaren sind sinnvoll genutzt, um Zweck und Funktionsweise verständlicher zu beschreiben.
+- [X] Kommentare befolgen Kommentarkonventionen (auskommentierten Code-Blöcke / TODOs:).
 
 ---
 
 ## **Tests**
-- [ ] Unit-Tests decken größtenteils die implementierten Funktionen ab.
-- [ ] Alle Testfälle sind erfolgreich durchlaufen und dokumentiert.
-- [ ] Es existieren Testfälle für alle kritischen Use-Cases, insbesondere:
+- [X] Unit-Tests decken alle implementierten Funktionen ab.
+- [X] Alle Testfälle sind erfolgreich durchlaufen.
+- [X] Es existieren Testfälle für alle kritischen Use-Cases, insbesondere:
   - Erkennung der Anrede, des Titel, des Vorname, des Nachname und des Geschlechts.
   - Trennung von Vor- und Nachname.
   - Generierung der Briefanrede.
   - Generierung des Bindestrichs bei Doppelnamen.
   - Fehlerhafte Eingaben (z. B. doppelte Anrede, fehlender Name) werden korrekt gehandhabt.
-- [ ] Integrationstests überprüfen die Zusammenarbeit verschiedener Module.
-- [ ] Manuelle Tests wurden durchgeführt, um die Funktionalität auf der Zielplattform zu validieren.
+- [X] Manuelle Tests wurden durchgeführt, um die Funktionalität auf der Zielplattform zu validieren.
 
 ---
 
 ## **Design und Architektur**
-- [ ] Ein grobes Designkonzept liegt vor und ist in der Dokumentation enthalten.
-- [ ] Die Datenstruktur ist logisch und leicht strukturiert.
-- [ ] Das Programm ist so aufgebaut, dass durch Schnittstellen, zukünftige Erweiterungen (z. B. Datenbank-Anbindung) möglich wären.
+- [X] Ein grobes Designkonzept liegt vor und ist in der Dokumentation enthalten.
+- [X] Die Datenstruktur ist logisch und leicht strukturiert.
+- [X] Das Programm ist so aufgebaut, dass durch Schnittstellen, zukünftige Erweiterungen (z. B. Datenbank-Anbindung) möglich wären.
 
 ---
 
 ## **Benutzerfreundlichkeit**
-- [ ] Die Anwendung ist intuitiv zu bedienen, mit klaren Hinweisen und Fehlermeldungen.
-- [ ] Bei manuellen Eingaben gibt es Eingabefelder, die die Benutzerführung unterstützen.
-- [ ] Alle Felder (z. B. Anrede, Titel, Vorname, Nachname, Geschlecht) können vom Benutzer einfach überprüft und bearbeitet werden.
+- [X] Die Anwendung ist intuitiv zu bedienen, mit klaren Hinweisen und Fehlermeldungen.
+- [X] Bei manuellen Eingaben gibt es Eingabefelder, die die Benutzerführung unterstützen.
+- [X] Alle Felder (z. B. Titel, Vorname, Nachname, Geschlecht, Sprache) können vom Benutzer einfach überprüft und bearbeitet werden.
 
 ---
 
 ## **Dokumentation**
-- [ ] Eine vollständige und verständliche Dokumentation liegt vor, die folgende Punkte enthält:
+- [X] Eine vollständige und verständliche Dokumentation liegt vor, die folgende Punkte enthält:
   - Übersicht über die Funktionalitäten (User Stories, Akzeptanzkriterien).
   - Kurzanleitung zur Installation und Nutzung der Anwendung.
   - Beschreibung der Datenstruktur.
-- [ ] Release Notes dokumentieren Änderungen, technische Informationen und die Installationsanweisungen.
+- [X] Release Notes dokumentieren technische Informationen und die Installationsanweisungen.
 
 ---
 
 ## **Abnahme**
-- [ ] Ein Review mit mindestens einem Kollegen wurde durchgeführt, und alle identifizierten Probleme wurden behoben.
-- [ ] Ein Code-Scanner hat den Quellcode auf Schwachstellen überprüft.
+- [X] Ein Review mit mindestens einem Kollegen wurde durchgeführt, und alle identifizierten Probleme wurden behoben.
 
 ---
 
 ## **Qualitätssicherung**
-- [ ] Alle Anforderungen der Aufgabenstellung wurden vollständig erfüllt.
-- [ ] Die Gesamtbewertungskriterien der Aufgabe (MVP, User Stories, Tests, Release Notes, Funktionalität) sind abgedeckt und überprüft.
+- [X] Alle Anforderungen der Aufgabenstellung wurden vollständig erfüllt.
+- [X] Die Gesamtbewertungskriterien der Aufgabe (MVP, User Stories, Tests, Release Notes, Funktionalität) sind abgedeckt und überprüft.
 
 ---
 
 # **Kontakt-Splitter Design**
 
-Die Anwendung "Kontakt-Splitter" bietet eine intuitive Benutzeroberfläche, um Namen und zugehörige Informationen wie Anrede, Vorname und Nachname zu analysieren, zu bearbeiten und für verschiedene Zwecke zu nutzen. Hier eine Beschreibung der einzelnen Bereiche und ihrer Funktionen:
+Die Anwendung "Kontakt-Splitter" bietet eine intuitive Benutzeroberfläche, um Namen und zugehörige Informationen wie Titel, Vorname und Nachname zu analysieren, zu bearbeiten und für verschiedene Zwecke zu nutzen. Hier eine Beschreibung der einzelnen Bereiche und ihrer Funktionen:
 
 ---
 
-## **Oberfläche und Funktionen**
+## **UI-Design**
 
 ### **1. Namen scannen**
 - **Eingabefeld:** Ganz oben befindet sich ein Textfeld, in das der vollständige Name eingegeben werden kann (z. B. "Herr Max Mustermann").
@@ -196,7 +194,7 @@ Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeit
 - **Listen anzeigen:** Per Design-Entscheidung von Team Laura wurde festgelegt, dass die Listen in JSON-Datein verwaltet und abgerufen werden können. In dem MVP werden deshalb die Listen in demselben Ordner, in der auch die .exe liegt verwaltet. Der Benutzer hat damit die Möglichkeit zu überprüfen, welche Sprachen, Titel, Anreden, Geschlechter und Briefanreden dieses Programm momentan unterstützt, wobei die Benutzerdreundlichkeit aber auch die Nachvollziehbarkeit verbessert wird.
 ---
 
-## **Anwendungsbeispiel**
+### **Anwendungsbeispiel**
 1. **Eingabe eines Namens:** 
    - Geben Sie z. B. "Herr Dr. Max Mustermann" in das Textfeld ein und klicken Sie auf "Namen scannen". Der Name wird in "Anrede: Herr", "Titel: Dr.", "Vorname: Max", und "Nachname: Mustermann" aufgeteilt.
 
@@ -213,6 +211,10 @@ Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeit
 5. **Ergänzen von Optionen:**
    - Fügen Sie einen neuen Titel oder ein neues Gender in Kombination mit einer passenenden Anrede im Modus "Optionen ergänzen" hinzu.
 ---
+## **Architektur-Design**
+![Alt-Text](./images/beispielbild.jpg)
+
+---
 
 # Release Notes - Kontaktsplitter v1.0
 
@@ -222,7 +224,7 @@ Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeit
 ---
 
 ## **Zusammenfassung**
-Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters, einer Anwendung zur automatisierten Erkennung und Verarbeitung von Kontaktinformationen (Anrede, Titel, Vorname, Nachname und Geschlecht). Die Anwendung wurde in Python entwickelt und als ausführbare Datei (.exe) für Windows 11 bereitgestellt.  
+Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters, einer Anwendung zur automatisierten Erkennung und Verarbeitung von Kontaktinformationen (Titel, Vorname, Nachname und Geschlecht). Die Anwendung wurde in Python entwickelt und als ausführbare Datei (.exe) für Windows 11 bereitgestellt.  
 
 ---
 
@@ -286,19 +288,22 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 - **Speicherplatz**: 100 MB
 
 ---
-
 ## **Installation**
-1. Laden Sie die ausführbare Datei (`Kontaktsplitter_v1.0.exe`) aus dem bereitgestellten Release-Paket herunter.
+
+### **Option 1: Download des Programms**
+
+1. Laden Sie das bereitgestellte Release-Paket herunter.
 2. Speichern Sie die Datei an einem gewünschten Speicherort auf Ihrem Computer.
 3. Doppelklicken Sie auf die Datei `Kontaktsplitter_v1.0.exe`, um die Anwendung zu starten.
 
-## **Ausführung aus dem Quellcode**
+### **Option 2: Ausführung aus dem Quellcode**
 Falls Sie den Quellcode ausführen möchten, gehen Sie wie folgt vor:
+
 1. Laden Sie das Repository herunter oder klonen Sie es über Git:  
    
-   git clone https://github.com/beispiel/kontaktsplitter.git
+   git clone https://github.com/JonathanFleischmann/ContactSplitter.git
 
-   pip install -r requirements.txt
+   pip install tinydb, tkinter, openai
 
    python main.py
 
