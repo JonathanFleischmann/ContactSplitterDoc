@@ -2,7 +2,7 @@
 
 # User-Stories
 ## User Story 1: Anrede identifizieren, aufteilen und zwischenspeichern
-**Als** Sachbearbeiter  
+**Als** Sachbearbeiter:in  
 **möchte ich**, dass die Ausgabe des Visitenkartenscanners (Zeichenkette) automatisch in den Feldern "Titel", "Vorname", "Nachname" und "Geschlecht" zerlegt und zwischengespeichert wird,  
 **um** sicherzustellen, dass die Daten standardisiert und korrekt vorliegen.
 
@@ -18,25 +18,25 @@
 ---
 
 ## User Story 2: Manuelle Anpassung von Feldern 
-**Als** Sachbearbeiter  
+**Als** Sachbearbeiter:in
 **möchte ich**, dass ich die Inhalte der Felder bei Bedarf manuell manipulieren kann,  
 **um** individuelle Anpassungen für spezielle Fälle vornehmen zu können.
 
 ### Akzeptanzkriterien
-- Der Nutzer kann vorhandene Felder durch die Eingabefelder bearbeiten.
-- Der Nutzer kann leere Felder durch die Eingabefelder füllen.
-- Die Änderungen des Nutzers werden erfolgreich zwischengespeichert.
+- Die Nutzer:innen können vorhandene Felder durch die Eingabefelder bearbeiten.
+- Die Nutzer:innen können leere Felder durch die Eingabefelder füllen.
+- Die Änderungen der Nutzer:innen werden erfolgreich zwischengespeichert.
 
 ### Priorität : Hoch
 
 ---
 
 ## User Story 3: Bereitstellung und Erweiterbarkeit einer Titelliste
-**Als** Sachbearbeiter  
-**möchte ich**, dass eine vorgefertigten Titelliste (Top 20 häufigste Titel in Deutschland) über die Benutzeroberfläche aufgerufen und manuell erweitert werden kann,  
+**Als** Sachbearbeiter:in
+**möchte ich**, dass eine vorgefertigten Titelliste (Top 20 häufigste Titel in Deutschland) über die Nutzungsoberfläche aufgerufen und manuell erweitert werden kann,  
 **um** individuelle Anpassungen für spezielle Fälle vornehmen zu können.
 ### Akzeptanzkriterien
-- Der Nutzer kann Titel in die Titelliste hinzufügen.
+- Die Nutzer:innen können Titel in die Titelliste hinzufügen.
 - Die Änderungen werden solange das Programm läuft erfolgreich zwischengespeichert.
 
 ### Priorität : Hoch
@@ -45,12 +45,12 @@
 
 
 ## User Story 4: Standardisierte Briefanrede generieren
-**Als** Sachbearbeiter  
+**Als** Sachbearbeiter:in  
 **möchte ich**, dass eine Briefanrede auf Basis der Ausgabe des Visitenkartenscanners (Zeichenkette) generiert wird,  
 **um** die Qualität und Konsistenz von Korrespondenz sicherzustellen.
 
 ### Akzeptanzkriterien
-- Die generierte Briefanrede verwendet alle relevanten Felder: Anrede, Titel, Vorname und Nachname.
+- Die generierte Briefanrede verwendet alle relevanten Informationen: Anrede, Titel, Vorname und Nachname.
 - Die Briefanrede entspricht der definierten Tabelle für Anreden (z. B. "Sehr geehrte Damen und Herren").
 
 ### Priorität : Hoch
@@ -58,7 +58,7 @@
 ---
 
 ## User Story 5: Doppelnamen formatieren
-**Als** Sachbearbeiter  
+**Als** Sachbearbeiter:in  
 **möchte ich**, dass Doppelnamen mit einem Bindestrich verbunden werden,  
 **um** die Anrede leichter lesbarer zu gestalten.
 
@@ -71,19 +71,19 @@
 ---
 
 ## User Story 6: Deutschsprachige Unterstützung für Anreden
-**Als** Sachbearbeiter  
+**Als** Sachbearbeiter:in  
 **möchte ich**, dass die Unterstüzung der deutsche Sprache, aber auch die potentzielle Erkennung anderer Sprachen gewährleistet ist,  
 **um** eine internationale Korrespondenz zu ermöglichen.
 
 ### Akzeptanzkriterien
 - Deutsch ist die Standard-Sprache.
-- Den Nutzer wird mitgeteilt wenn eine andere Sprache erkannt wurde.
+- Den Nutzenden wird mitgeteilt wenn eine andere Sprache erkannt wurde.
 
 ### Priorität : Niedrig
 
 ---
 
-# Definition of Done (DoD)
+# Definition of Done (DoD) 
 
 Der Auftrag gilt als **fertiggestellt**, wenn alle der folgenden Kriterien erfüllt sind:
 
@@ -130,8 +130,8 @@ Der Auftrag gilt als **fertiggestellt**, wenn alle der folgenden Kriterien erfü
 
 ## **Benutzerfreundlichkeit**
 - [X] Die Anwendung ist intuitiv zu bedienen, mit klaren Hinweisen und Fehlermeldungen.
-- [X] Bei manuellen Eingaben gibt es Eingabefelder, die die Benutzerführung unterstützen.
-- [X] Alle Felder (z. B. Titel, Vorname, Nachname, Geschlecht, Sprache) können vom Benutzer einfach überprüft und bearbeitet werden.
+- [X] Bei manuellen Eingaben gibt es Eingabefelder, die die Nutzungsführung unterstützen.
+- [X] Alle Felder (z. B. Titel, Vorname, Nachname, Geschlecht, Sprache) können vom den Benutzer:innen einfach überprüft und bearbeitet werden.
 
 ---
 
@@ -145,7 +145,7 @@ Der Auftrag gilt als **fertiggestellt**, wenn alle der folgenden Kriterien erfü
 ---
 
 ## **Abnahme**
-- [X] Ein Review mit mindestens einem Kollegen wurde durchgeführt, und alle identifizierten Probleme wurden behoben.
+- [X] Ein Review wurde mit mindestens einem Mitglied durchgeführt und alle identifizierten Probleme wurden behoben.
 
 ---
 
@@ -157,7 +157,7 @@ Der Auftrag gilt als **fertiggestellt**, wenn alle der folgenden Kriterien erfü
 
 # **Kontakt-Splitter Design**
 
-Die Anwendung "Kontakt-Splitter" bietet eine intuitive Benutzeroberfläche, um Namen und zugehörige Informationen wie Titel, Vorname und Nachname zu analysieren, zu bearbeiten und für verschiedene Zwecke zu nutzen. Hier eine Beschreibung der einzelnen Bereiche und ihrer Funktionen:
+Die Anwendung "Kontakt-Splitter" bietet eine intuitive Nutzungsoberfläche, um Namen und zugehörige Informationen wie Titel, Vorname und Nachname zu analysieren, zu bearbeiten und für verschiedene Zwecke zu nutzen. Hier eine Beschreibung der einzelnen Bereiche und ihrer Funktionen:
 
 ---
 
@@ -181,7 +181,7 @@ Unter dem Bereich "Namen scannen" gibt es eine horizontale Leiste mit vier Haupt
     - Zusätzliche Informationen wie Sprache und Geschlecht können hinzugefügt beziehungsweise geändert werden, wobei die Änderungen direkt wirksam werden.
   - **Schaltflächen:** "Entfernen" entfernt eine Komponente, und "Komponente hinzufügen" erlaubt das Hinzufügen neuer Informationen.
 
-- **Eingabeverlauf:** Dieser Modus ist in der Lage den eingegebenen Namen in einer Kontaktliste **transistent** zu speichern, indem man die grüne Schaltfläche "Kontakt speichern drückt". Mithilfe den zweien blauen Schaltflächen "persistentes Speichern" und "persistent Laden" kann der Benutzer die Kontaktliste **persistent** speichern. Damit wird die Benutzerfreundlichkeit enorm  verbessert, da Kontakte auch nach Programmende nach Wunsch des Benutzers wieder geladen werden können.
+- **Eingabeverlauf:** Dieser Modus ist in der Lage den eingegebenen Namen in einer Kontaktliste **transistent** zu speichern, indem man die grüne Schaltfläche "Kontakt speichern drückt". Mithilfe den zweien blauen Schaltflächen "persistentes Speichern" und "persistent Laden" können die Benutzer:innen die Kontaktliste **persistent** speichern. Damit wird die Nutzungsfreundlichkeit enorm verbessert, da Kontakte auch nach Programmende nach Wunsch der Benutzer:innen wieder geladen werden können.
 
 Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeiten" bearbeitet werden, wobei dann in der Modusauswahl "Namen und Daten anpassen" die Daten des Kontaktes reingeladen werden. Ebenfalls können diese Kontakte wiederrum auch mit der roten Schaltfläche "Löschen" entfernt werden.
 
@@ -191,7 +191,7 @@ Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeit
  - Für das Hinzufügen eines neuen Genders in die **Genderliste** gibt es auch ein Eingabenfeld mit einer "Hinzufügen"-Schaltfläche. - Um eine neue Anrede in die **Anredeliste** zu speichern, wird ebenfalls ein Eingabefeld, sowie eine Drop-Down der verschiedenen Sprachen und ein Drop-Down mit den aktuell vorhandenen Gendern bereitgestellt. Die Speicherung erfolgt ebenfalls durch die Aktivierung der blauen Schaltfläche "Hinzufügen".
  - Schlussendlich gibt es noch die Option eine neue Briefanrede in die **Briefanredensliste** einzufügen. Dies wird mithilfe eines Eingabefeldes, einer Sprache (Drop-Down), eines Genders (Drop-Down) und einer Entscheidung (Nachname anhängen/ Nachnamen nicht anhängen) realisiert. Wie auch bei den anderen Optionen wird die Eingabe durch die blaue Schaltfläche "Hinzufügen" gespeichert. 
 
-- **Listen anzeigen:** Per Design-Entscheidung von Team Laura wurde festgelegt, dass die Listen in JSON-Datein verwaltet und abgerufen werden können. In dem MVP werden deshalb die Listen in demselben Ordner, in der auch die .exe liegt verwaltet. Der Benutzer hat damit die Möglichkeit zu überprüfen, welche Sprachen, Titel, Anreden, Geschlechter und Briefanreden dieses Programm momentan unterstützt, wobei die Benutzerdreundlichkeit aber auch die Nachvollziehbarkeit verbessert wird.
+- **Listen anzeigen:** Per Design-Entscheidung von Team Laura wurde festgelegt, dass die Listen in JSON-Datein verwaltet und abgerufen werden können. In dem MVP werden deshalb die Listen in demselben Ordner, in der auch die .exe liegt verwaltet. Die Benutzer:innen haben damit die Möglichkeit zu überprüfen, welche Sprachen, Titel, Anreden, Geschlechter und Briefanreden dieses Programm momentan unterstützt, wobei die Nutzungsfreundlichkeit aber auch die Nachvollziehbarkeit verbessert wird.
 ---
 
 ### **Anwendungsbeispiel**
@@ -205,14 +205,15 @@ Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeit
    - Im Modus "Namen und Daten anpassen" können Sie etwa den Vornamen von "Max" zu "Alexander" ändern, oder andere Komponenten wie Anrede, Titel, Vorname oder Nachname hinzufügen, oder die bestehenden Attribute ändern. 
 
 4. **Verwenden des Eingabeverlaufs:**
-   - Speichern Sie diesen Kontakt und rufen Sie ihn nach weiteren Eingaben aus dem Eingabeverlauf ab, um Zeit zu sparen.
-   - Verwenden Sie die 
+   - Speichern Sie diesen Kontakt ab, damit dieser im Eingabeverlauf erscheint.
+   - Persistieren Sie diesen, indem Sie die entsprechende Schaltfläche betätigen.
+   - Diesen können nun jederzeit (auch nach Programmende) aufrufen, indem Sie die persistente Liste laden (Dieser Schritt ersetzt auch die transistenten Kontakte, falls vorhanden).
 
 5. **Ergänzen von Optionen:**
    - Fügen Sie einen neuen Titel oder ein neues Gender in Kombination mit einer passenenden Anrede im Modus "Optionen ergänzen" hinzu.
 ---
 ## **Architektur-Design**
-![Alt-Text](./images/beispielbild.jpg)
+![Alt-Text](ContactSplitterKlassendiagramm.svg)
 
 ---
 
@@ -231,7 +232,7 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 ## **Neue Features**
 
 ### Namen Scannen
-- **Eingabe und Scannen:** Nutzer können eine Zeichenkette eingeben und diese analysieren lassen, um relevante Informationen wie Titel, Vorname, Nachname und Geschlecht zu extrahieren.
+- **Eingabe und Scannen:** Nutzer:innen können eine Zeichenkette eingeben und diese analysieren lassen, um relevante Informationen wie Titel, Vorname, Nachname und Geschlecht zu extrahieren.
 - **KI-Unterstützung:** Die KI kann ein- oder ausgeschaltet werden. Ist das Geschlecht aufgrund mangelnder Daten nicht bestimmbar (z. B. nur der Name ist gegeben), hilft die KI, eine Schätzung anhand von Namensmustern vorzunehmen.
 
 ---
@@ -243,7 +244,7 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 ---
 
 ### Manuelle Anpassungen
-- **Flexibilität:** Nutzer können alle erkannten Attribute manuell anpassen, falls die automatische Zuordnung nicht eindeutig war.
+- **Flexibilität:** Nutzer:innen können alle erkannten Attribute manuell anpassen, falls die automatische Zuordnung nicht eindeutig war.
 - **Bearbeitung:** Attribute können bearbeitet, entfernt oder neu hinzugefügt werden.
 - **Trennung von Vor- und Nachnamen:** Das Programm unterstützt die automatische Trennung von Vor- und Nachnamen sowie die Anpassung von Sprache und Geschlecht eines Kontakts.
 
@@ -270,14 +271,44 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 ---
 
 ### Erweiterbare Optionen
-- **Anpassungsfähigkeit:** Nutzer können neue Titel und Geschlechter hinzufügen, um das Programm an individuelle Anforderungen anzupassen.
+- **Anpassungsfähigkeit:** Nutzer:innen können neue Titel und Geschlechter hinzufügen, um das Programm an individuelle Anforderungen anzupassen.
 - **Kontextuelle Briefanreden:** Anreden und Briefanreden mit speziellem Kontext können definiert und für die automatisierte Generierung genutzt werden.
 - **Persistente Listen:** Alle Anpassungen werden in JSON-Listen gespeichert, die im selben Ordner wie die ausführbare Datei liegen und jederzeit erweitert oder bearbeitet werden können.
 
 ---
 
 ### UI-Feedback
-- **Benutzerfreundlichkeit:** Klare Fehlermeldungen und Hinweise verbessern die Bedienung und Nachvollziehbarkeit des Programms, was die Nutzererfahrung optimiert.
+- **Nutzungsfreundlichkeit:** Klare Fehlermeldungen und Hinweise verbessern die Bedienung und Nachvollziehbarkeit des Programms, was die Nutzungserfahrung optimiert.
+
+
+### Definierte Logik zur Namens- und Geschlechtszuordnung
+
+#### **Namenszuordnung**
+- **1 Name:** Wird als Nachname interpretiert.
+- **2 Namen:** Erster Name wird als Vorname, zweiter Name als Nachname zugeordnet.
+- **3 Namen:** Die ersten beiden Namen werden als Vornamen, der dritte als Nachname definiert.
+- **4+ Namen:** Die ersten beiden Namen gelten als Vornamen, alle weiteren Namen werden als Nachnamen betrachtet.
+
+#### **Sonderfall: Namensumkehrung durch Komma**
+- Wenn ein Komma in der Eingabe erkannt wird, wird der Name nach folgender Regel verarbeitet:
+  - Der Name rechts des Kommas wird als Vorname interpretiert.
+  - Der Name links des Kommas wird als Nachname interpretiert.
+- Beispiel: `Müller, Petra` wird zu:
+  - Vorname: Petra
+  - Nachname: Müller
+
+#### **Erkennung von Titeln und Anreden**
+- **Mehrsprachige Erkennung:** Titel und Anreden werden anhand einer hinterlegten Liste erkannt, unabhängig von ihrer Position im Namen.
+- **Adelstitel:** Adelstitel werden zusammen mit den nachfolgenden Namen als Nachname betrachtet.
+
+#### **Geschlechtserkennung**
+- **Anhand der Anrede:** Wenn eine Anrede vorhanden ist, wird das Geschlecht direkt daraus abgeleitet.
+- **Anhand des Namens:** Wenn keine Anrede vorliegt, wird das Geschlecht mithilfe der KI geschätzt. 
+  - **Hinweis:** Die KI kann bei Bedarf deaktiviert werden. In diesem Fall wird das Geschlecht als "nicht ermittelbar" gekennzeichnet.
+
+#### **Briefanreden-Logik**
+- **Hinterlegte Kombinationen:** Für jede Kombination aus Geschlecht und Sprache kann eine spezifische Anrede definiert werden.
+- **Generierung:** Bei der Erstellung einer Briefanrede wird überprüft ob diese Kombination vorliegt, um diese passende Anrede und Briefanrede zu benutzen.
 
 ---
 
@@ -306,11 +337,6 @@ Falls Sie den Quellcode ausführen möchten, gehen Sie wie folgt vor:
    pip install tinydb, tkinter, openai
 
    python main.py
-
----
-
-## **Zukünftige Verbesserungen**
-- persistente Datenbankanbindung
 
 ---
 ## **Support**
@@ -414,11 +440,11 @@ Ja, die Antworten und deren Qualität hängen stark vom gewählten Modell und se
 - **Testfälle:** Eine Liste von Namen mit bekannten Geschlechtern kann verwendet werden, um die Genauigkeit der KI zu messen.
 - **Erfolgsquote:** Prozentualer Anteil korrekt geschätzter Geschlechter.
 - **Fehlerrate:** Anteil der Fälle, bei denen die KI "X" oder ein falsches Geschlecht liefert.
-- **Benutzerfeedback:** Direkte Rückmeldungen von Anwendern zur Qualität und Korrektheit der Ergebnisse.
+- **Nutzungsfeedback:** Direkte Rückmeldungen von Anwendern zur Qualität und Korrektheit der Ergebnisse.
 
 ---
 
 ## **Fazit**
-Der Einsatz der KI spart Zeit und Aufwand bei der Geschlechter- und Namensanalyse. Allerdings erfordert die Verwendung zusätzlicher technischer Maßnahmen für die Integration, klare Tests und eine gute Dokumentation der Limitationen. Es bleibt wichtig, die KI-Ergebnisse zu validieren, insbesondere in kritischen Kontexten.
+Der Einsatz der KI spart Zeit und Aufwand bei der Geschlechteranalyse. Allerdings erfordert die Verwendung zusätzlicher technischer Maßnahmen für die Integration, klare Tests und eine gute Dokumentation. Es bleibt wichtig, die KI-Ergebnisse zu validieren, insbesondere in kritischen Kontexten.
 
 
