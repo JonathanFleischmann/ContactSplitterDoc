@@ -171,27 +171,37 @@ Die Anwendung "Kontakt-Splitter" bietet eine intuitive Nutzungsoberfläche, um N
 ---
 
 ### **2. Modusauswahl**
-Unter dem Bereich "Namen scannen" gibt es eine horizontale Leiste mit vier Hauptmodi, die unterschiedliche Funktionen bieten:
+Unter dem Bereich "Namen scannen" gibt es eine horizontale Leiste mit vier Hauptmodi (lila Schaltflächen), die unterschiedliche Funktionen bieten:
 
-- **Briefanrede:** Generiert basierend auf den analysierten Daten eine standardisierte Briefanrede. Die Anrede wird im unteren Bereich angezeigt (z. B. "Sehr geehrter Herr Mustermann"). Es gibt außerdem ein Dropdown-Menü, um die Sprache der Anrede zu ändern.
+#### **Briefanrede:** 
+Generiert basierend auf den analysierten Daten eine standardisierte Briefanrede. Die Anrede wird im unteren Bereich angezeigt (z. B. "Sehr geehrter Herr Mustermann"). Es gibt außerdem ein Dropdown-Menü, um die Sprache der Anrede zu ändern.
   
-- **Namen und Daten anpassen:** Ermöglicht die detaillierte Bearbeitung der aufgeteilten Daten. 
-  - **Bearbeitungsfelder:** 
-    - "Titel", "Vorname" und "Nachname" werden einzeln aufgelistet, und jede Komponente kann manuell angepasst oder entfernt werden.
-    - Zusätzliche Informationen wie Sprache und Geschlecht können hinzugefügt beziehungsweise geändert werden, wobei die Änderungen direkt wirksam werden.
-  - **Schaltflächen:** "Entfernen" entfernt eine Komponente, und "Komponente hinzufügen" erlaubt das Hinzufügen neuer Informationen.
+#### **Namen und Daten anpassen:** 
 
-- **Eingabeverlauf:** Dieser Modus ist in der Lage den eingegebenen Namen in einer Kontaktliste **transistent** zu speichern, indem man die grüne Schaltfläche "Kontakt speichern drückt". Mithilfe den zweien blauen Schaltflächen "persistentes Speichern" und "persistent Laden" können die Benutzer:innen die Kontaktliste **persistent** speichern. Damit wird die Nutzungsfreundlichkeit enorm verbessert, da Kontakte auch nach Programmende nach Wunsch der Benutzer:innen wieder geladen werden können.
+- **Bearbeitungsfelder:** 
+  - "Titel", "Vorname" und "Nachname" werden einzeln aufgelistet, und jede Komponente kann manuell angepasst oder entfernt werden.
+  - Zusätzliche Informationen wie Sprache und Geschlecht können hinzugefügt beziehungsweise geändert werden, wobei die Änderungen direkt wirksam werden.
+- **Schaltflächen:** "Entfernen" entfernt eine Komponente, und "Komponente hinzufügen" erlaubt das Hinzufügen neuer Informationen.
+
+#### **Eingabeverlauf:** 
+Dieser Modus ist in der Lage den eingegebenen Namen in einer Kontaktliste **transistent** zu speichern, indem man die grüne Schaltfläche "Kontakt speichern drückt". Mithilfe den zweien blauen Schaltflächen "persistentes Speichern" und "persistent Laden" können die Benutzer:innen die Kontaktliste **persistent** speichern. Damit wird die Nutzungsfreundlichkeit enorm verbessert, da Kontakte auch nach Programmende nach Wunsch der Benutzer:innen wieder geladen werden können.
 
 Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeiten" bearbeitet werden, wobei dann in der Modusauswahl "Namen und Daten anpassen" die Daten des Kontaktes reingeladen werden. Ebenfalls können diese Kontakte wiederrum auch mit der roten Schaltfläche "Löschen" entfernt werden.
 
 
-- **Optionen ergänzen:** Hier können neue Titel-, Anreden-, Geschlechts- und Briefanredenoptionen  ergänzt und **transistent** gespeichert werden, um die Analyse und Zuordnung weiter zu individualisieren.
- - Für die Erweiterung der **Titelliste** ist ein Eingabefeld und ein Drop-Down mit verschiedenen Sprachen vorgesehen, die mit der blauen Schaltfläche "Hinzufügen" den neuen Titel speichert. 
- - Für das Hinzufügen eines neuen Genders in die **Genderliste** gibt es auch ein Eingabenfeld mit einer "Hinzufügen"-Schaltfläche. - Um eine neue Anrede in die **Anredeliste** zu speichern, wird ebenfalls ein Eingabefeld, sowie eine Drop-Down der verschiedenen Sprachen und ein Drop-Down mit den aktuell vorhandenen Gendern bereitgestellt. Die Speicherung erfolgt ebenfalls durch die Aktivierung der blauen Schaltfläche "Hinzufügen".
- - Schlussendlich gibt es noch die Option eine neue Briefanrede in die **Briefanredensliste** einzufügen. Dies wird mithilfe eines Eingabefeldes, einer Sprache (Drop-Down), eines Genders (Drop-Down) und einer Entscheidung (Nachname anhängen/ Nachnamen nicht anhängen) realisiert. Wie auch bei den anderen Optionen wird die Eingabe durch die blaue Schaltfläche "Hinzufügen" gespeichert. 
+#### **Optionen ergänzen:**
+ Hier können neue Titel-, Anreden-, Geschlechts- und Briefanredenoptionen  ergänzt und **transistent** gespeichert werden, um die Analyse und Zuordnung weiter zu individualisieren.
 
-- **Listen anzeigen:** Per Design-Entscheidung von Team Laura wurde festgelegt, dass die Listen in JSON-Datein verwaltet und abgerufen werden können. In dem MVP werden deshalb die Listen in demselben Ordner, in der auch die .exe liegt verwaltet. Die Benutzer:innen haben damit die Möglichkeit zu überprüfen, welche Sprachen, Titel, Anreden, Geschlechter und Briefanreden dieses Programm momentan unterstützt, wobei die Nutzungsfreundlichkeit aber auch die Nachvollziehbarkeit verbessert wird.
+ - **Titel hinzufügen:** \
+ Für die Erweiterung der **Titelliste** ist ein Eingabefeld und ein Drop-Down mit verschiedenen Sprachen vorgesehen, die mit der blauen Schaltfläche "Hinzufügen" den neuen Titel speichert. 
+ - **Geschlecht hinzufügen:**\
+  Für das Hinzufügen eines neuen Geschlechts in die **Geschlechtsliste** gibt es auch ein Eingabenfeld mit einer "Hinzufügen"-Schaltfläche. 
+ - **Anrede hinzufügen:**\
+  Um eine neue Anrede in die **Anredeliste** zu speichern, wird ebenfalls ein Eingabefeld, sowie eine Drop-Down der verschiedenen Sprachen und ein Drop-Down mit den aktuell vorhandenen Geschlechtn bereitgestellt. Die Speicherung erfolgt ebenfalls durch die Aktivierung der blauen Schaltfläche "Hinzufügen".
+ - **Briefanrede hinzufügen:** \
+ Schlussendlich gibt es noch die Option eine neue Briefanrede in die **Briefanredensliste** einzufügen. Dies wird mithilfe eines Eingabefeldes, einer Sprache (Drop-Down), eines Geschlechts (Drop-Down) und einer Entscheidung (Nachname anhängen/ Nachnamen nicht anhängen) realisiert. Wie auch bei den anderen Optionen wird die Eingabe durch die blaue Schaltfläche "Hinzufügen" gespeichert. 
+- **Listen anzeigen:**\
+ Per Design-Entscheidung von Team Laura wurde festgelegt, dass die Listen in JSON-Datein verwaltet und abgerufen werden können. In dem MVP werden deshalb die Listen in demselben Ordner, in der auch die .exe liegt verwaltet. Die Benutzer:innen haben damit die Möglichkeit zu überprüfen, welche Sprachen, Titel, Anreden, Geschlechter und Briefanreden dieses Programm momentan unterstützt, wobei die Nutzungsfreundlichkeit aber auch die Nachvollziehbarkeit verbessert wird.
 ---
 
 ### **Anwendungsbeispiel**
@@ -210,7 +220,7 @@ Kontakte die gespeichert wurden, können durch die blaue Schaltfläche "Bearbeit
    - Diesen können nun jederzeit (auch nach Programmende) aufrufen, indem Sie die persistente Liste laden (Dieser Schritt ersetzt auch die transistenten Kontakte, falls vorhanden).
 
 5. **Ergänzen von Optionen:**
-   - Fügen Sie einen neuen Titel oder ein neues Gender in Kombination mit einer passenenden Anrede im Modus "Optionen ergänzen" hinzu.
+   - Fügen Sie einen neuen Titel oder ein neues Geschlecht in Kombination mit einer passenenden Anrede im Modus "Optionen ergänzen" hinzu.
 ---
 ## **Architektur-Design**
 ![Alt-Text](ContactSplitterKlassendiagramm.svg)
@@ -281,7 +291,7 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 - **Nutzungsfreundlichkeit:** Klare Fehlermeldungen und Hinweise verbessern die Bedienung und Nachvollziehbarkeit des Programms, was die Nutzungserfahrung optimiert.
 
 
-### Definierte Logik zur Namens- und Geschlechtszuordnung
+### Definierte Logik der Namensaufteilung
 
 #### **Namenszuordnung**
 - **1 Name:** Wird als Nachname interpretiert.
@@ -352,7 +362,7 @@ i22021@hb.dhbw-stuttgart.de
 Vielen Dank, dass Sie den Kontaktsplitter verwenden!
 Ihr Entwicklungsteam Laura
    
-# KI-Einsatz bei der Geschlechtserkennung
+# Anhang: KI-Einsatz bei der Geschlechtserkennung
 
 ## **Inhaltliche Fragen**
 
