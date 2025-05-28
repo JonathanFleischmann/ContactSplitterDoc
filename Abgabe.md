@@ -168,6 +168,7 @@ Die Anwendung "Kontakt-Splitter" bietet eine intuitive Benutzeroberfläche, um N
 ### **1. Namen scannen**
 - **Eingabefeld:** Ganz oben befindet sich ein Textfeld, in das der vollständige Name eingegeben werden kann (z. B. "Herr Max Mustermann").
 - **Schaltfläche "Namen scannen":** Mit einem Klick auf diese orangefarbene Schaltfläche wird der eingegebene Name analysiert und wird automatisch in ein Objekt mit den Bestandteilen diesen Namens umgewandelt (Titel, Vorname und Nachname).
+- **KI-Ein- und Ausschalten:** Mit Einer Checkbox kann die Unterstüzung von KI, zur Ermittlung des Geschlechts anhand des Namens ein und ausgeschalten werden.
 
 ---
 
@@ -226,22 +227,55 @@ Diese Version enthält die erste stabile Veröffentlichung des Kontaktsplitters,
 ---
 
 ## **Neue Features**
-### 1. **Automatische Anrede- und Geschlechtserkennung**
-- Identifikation, Zuordnung und Zwischenspeicherung von der Anrede, den Titel, den Vorname, den Nachname und dem Geschlecht.
-- Unterstützung für manuelle Anpassungen, falls die Zuordnung nicht eindeutig ist.
-- Fehlermeldungen und Hinweise erhöhen die Benutzerfreundlichkeit und die Nachvollziehbarkeit.
 
-### 2. **Trennung von Vor- und Nachnamen**
-- Automatische Trennung von Vor- und Nachnamen, inklusive Unterstützung für Doppelnamen und deren Formatierung.
+### Namen Scannen
+- **Eingabe und Scannen:** Nutzer können eine Zeichenkette eingeben und diese analysieren lassen, um relevante Informationen wie Titel, Vorname, Nachname und Geschlecht zu extrahieren.
+- **KI-Unterstützung:** Die KI kann ein- oder ausgeschaltet werden. Ist das Geschlecht aufgrund mangelnder Daten nicht bestimmbar (z. B. nur der Name ist gegeben), hilft die KI, eine Schätzung anhand von Namensmustern vorzunehmen.
 
-### 3. **Generierung von Briefanreden**
-- Erstellung standardisierter Briefanreden auf Basis der eingegebenen Informationen auf verschiedenen Sprachen.
+---
 
-### 4. **Mehrsprachige Unterstützung**
-- Unterstützung für die englische, deutsche, französische, spanische, italienische, portugiesische, polnische, tschechische, rumänische und serbische Sprache.
+### Automatische Erkennung von Titel, Namen und Geschlecht
+- **Identifikation und Zuordnung:** Das Programm erkennt und speichert automatisch Titel, Vorname, Nachname und Geschlecht durch eine komplexe Logik, die über grundlegende Anforderungen hinausgeht.
+- **Anrede-Erkennung:** Anreden werden erkannt, aber nicht gespeichert. Stattdessen wird bei der Erstellung einer Briefanrede eine passende, standardisierte Anrede aus einer vordefinierten Liste verwendet.
 
-### 5. **Manuelle Anpassungen**
-- Möglichkeit, neue Titel hinzuzufügen.
+---
+
+### Manuelle Anpassungen
+- **Flexibilität:** Nutzer können alle erkannten Attribute manuell anpassen, falls die automatische Zuordnung nicht eindeutig war.
+- **Bearbeitung:** Attribute können bearbeitet, entfernt oder neu hinzugefügt werden.
+- **Trennung von Vor- und Nachnamen:** Das Programm unterstützt die automatische Trennung von Vor- und Nachnamen sowie die Anpassung von Sprache und Geschlecht eines Kontakts.
+
+---
+
+### Generierung von Briefanreden
+- **Automatisierte Erstellung:** Auf Basis der eingegebenen Informationen erstellt das Programm standardisierte Briefanreden in verschiedenen Sprachen.
+- **Unterstützung für Doppelnamen:** Sowohl Vor- als auch Nachnamen mit Bindestrich werden korrekt formatiert.
+- **Mehrsprachigkeit:** Die generierte Anrede kann problemlos in andere Sprachen geändert werden.
+
+---
+
+### Mehrsprachige Unterstützung
+- **Verfügbarkeit:** Das Programm unterstützt die Sprachen Deutsch, Englisch, Französisch, Spanisch, Italienisch, Portugiesisch, Polnisch, Tschechisch, Rumänisch und Serbisch.
+
+---
+
+### Eingabeverlauf
+- **Kontaktverwaltung:** Kontakte können temporär (transient) oder dauerhaft (persistent) zwischengespeichert werden, um auch nach einem Programmende wieder zugänglich zu sein.
+- **Verlaufsgenerierung:** Ein übersichtlicher Verlauf wird erstellt, entweder durch das Laden persistenter Kontakte oder durch das Speichern neuer transienter Kontakte.
+- **Bearbeitungsmöglichkeiten:** Kontakte im Verlauf können bearbeitet und entfernt werden. Änderungen müssen explizit gespeichert werden, um dauerhaft zu sein.
+- **Datenkonsistenz:** Beim Laden persistenter Kontakte werden alle transienten Daten verworfen, es sei denn, sie wurden vorher persistent gespeichert.
+
+---
+
+### Erweiterbare Optionen
+- **Anpassungsfähigkeit:** Nutzer können neue Titel und Geschlechter hinzufügen, um das Programm an individuelle Anforderungen anzupassen.
+- **Kontextuelle Briefanreden:** Anreden und Briefanreden mit speziellem Kontext können definiert und für die automatisierte Generierung genutzt werden.
+- **Persistente Listen:** Alle Anpassungen werden in JSON-Listen gespeichert, die im selben Ordner wie die ausführbare Datei liegen und jederzeit erweitert oder bearbeitet werden können.
+
+---
+
+### UI-Feedback
+- **Benutzerfreundlichkeit:** Klare Fehlermeldungen und Hinweise verbessern die Bedienung und Nachvollziehbarkeit des Programms, was die Nutzererfahrung optimiert.
 
 ---
 
@@ -277,11 +311,12 @@ Falls Sie den Quellcode ausführen möchten, gehen Sie wie folgt vor:
 ## **Support**
 
 Falls Sie auf Probleme stoßen oder Feedback geben möchten, kontaktieren Sie uns bitte unter:
-i22021@hb.dhbw-stuttgart.de
-
+---
 i22006@hb.dhbw-stuttgart.de
 
 i22032@hb.dhbw-stuttgart.de
+
+i22021@hb.dhbw-stuttgart.de
 
 Vielen Dank, dass Sie den Kontaktsplitter verwenden!
 Ihr Entwicklungsteam Laura
